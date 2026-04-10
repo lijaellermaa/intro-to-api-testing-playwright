@@ -19,7 +19,7 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '22'
+          node-version: '24'
 
       - name: Install dependencies
         run: npm ci
@@ -40,6 +40,9 @@ jobs:
           npx tsc --noEmit
 
       - name: Run Playwright API tests
+        env:
+          USER: ${{ secrets.USER }}
+          PASSWORD: ${{ secrets.PASSWORD }}
         run: |
           echo "Running Playwright to execute API tests..."
           npx playwright test    
