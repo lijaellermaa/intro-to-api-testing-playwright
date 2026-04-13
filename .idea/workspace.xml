@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="dbab4126-55a9-4588-8a89-c70dd52f6a4a" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/DTO/ProductDTO.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/products-api-tests.spec.ts" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;lijaellermaa&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/lijaellermaa/intro-to-api-testing-playwright.git&quot;,
+    &quot;accountId&quot;: &quot;6cf561b1-f9e2-41e9-bc58-979f85e1d18b&quot;
+  }
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 0
+}</component>
+  <component name="ProjectId" id="3Bfdjsezd8lEfN5ZvnsxlhzNRJV" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Playwright.DELETE /test-orders/{id}.executor": "Run",
+    "Playwright.GET /test-orders/auth.executor": "Run",
+    "Playwright.GET /test-orders/{id}.executor": "Run",
+    "Playwright.Homework 11 -> Product API Tests.DELETE /products/{id} - check not existing product deletion.executor": "Run",
+    "Playwright.Homework 11 -> Product API Tests.DELETE /products/{id} - check product deletion.executor": "Run",
+    "Playwright.Homework 11 -> Product API Tests.DELETE /products/{id} - should delete product.executor": "Run",
+    "Playwright.Homework 11 -> Product API Tests.GET /products - check API returns array with length >= 1.executor": "Run",
+    "Playwright.Homework 11 -> Product API Tests.GET /products - should return list of products.executor": "Run",
+    "Playwright.Homework 11 -> Product API Tests.GET /products/{id} - invalid API key.executor": "Run",
+    "Playwright.Homework 11 -> Product API Tests.GET /products/{id} - should not return not-existing product.executor": "Run",
+    "Playwright.Homework 11 -> Product API Tests.POST /products; GET /products/{id} - check product creation and product search by id.executor": "Run",
+    "Playwright.Homework 11 -> Product API Tests.PUT /products/{id} - check product update.executor": "Run",
+    "Playwright.Homework 11 -> Product API Tests.executor": "Run",
+    "Playwright.POST /test-orders.executor": "Run",
+    "Playwright.PUT /test-orders/{id}.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "git-widget-placeholder": "feat/le/TL-011",
+    "ignore.virus.scanning.warn.message": "true",
+    "javascript.preferred.runtime.type.id": "node",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "prettierjs.PrettierConfiguration.Package": "C:\\Users\\lija5\\WebstormProjects\\intro-to-api-testing-playwright\\node_modules\\prettier",
+    "ts.external.directory.path": "C:\\Users\\lija5\\WebstormProjects\\intro-to-api-testing-playwright\\node_modules\\typescript\\lib",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RunManager" selected="Playwright.Homework 11 -&gt; Product API Tests.GET /products - should return list of products">
+    <configuration name="Homework 11 -&gt; Product API Tests" type="JavaScriptTestRunnerPlaywright" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <playwright-package value="$PROJECT_DIR$/node_modules/@playwright/test" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="SUITE" />
+      <test-file value="$PROJECT_DIR$/tests/products-api-tests.spec.ts" />
+      <test-names>
+        <test-name value="Homework 11 -&gt; Product API Tests" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="Homework 11 -&gt; Product API Tests.DELETE /products/{id} - should delete product" type="JavaScriptTestRunnerPlaywright" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <playwright-package value="$PROJECT_DIR$/node_modules/@playwright/test" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/tests/products-api-tests.spec.ts" />
+      <test-names>
+        <test-name value="Homework 11 -&gt; Product API Tests" />
+        <test-name value="DELETE /products/{id} - should delete product" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="Homework 11 -&gt; Product API Tests.GET /products - check API returns array with length &gt;= 1" type="JavaScriptTestRunnerPlaywright" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <playwright-package value="$PROJECT_DIR$/node_modules/@playwright/test" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/tests/products-api-tests.spec.ts" />
+      <test-names>
+        <test-name value="Homework 11 -&gt; Product API Tests" />
+        <test-name value="GET /products - check API returns array with length &gt;= 1" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="Homework 11 -&gt; Product API Tests.GET /products - should return list of products" type="JavaScriptTestRunnerPlaywright" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <playwright-package value="$PROJECT_DIR$/node_modules/@playwright/test" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/tests/products-api-tests.spec.ts" />
+      <test-names>
+        <test-name value="Homework 11 -&gt; Product API Tests" />
+        <test-name value="GET /products - should return list of products" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="Homework 11 -&gt; Product API Tests.GET /products/{id} - should not return not-existing product" type="JavaScriptTestRunnerPlaywright" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <playwright-package value="$PROJECT_DIR$/node_modules/@playwright/test" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/tests/products-api-tests.spec.ts" />
+      <test-names>
+        <test-name value="Homework 11 -&gt; Product API Tests" />
+        <test-name value="GET /products/{id} - should not return not-existing product" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Playwright.Homework 11 -&gt; Product API Tests.GET /products - should return list of products" />
+        <item itemvalue="Playwright.Homework 11 -&gt; Product API Tests" />
+        <item itemvalue="Playwright.Homework 11 -&gt; Product API Tests.DELETE /products/{id} - should delete product" />
+        <item itemvalue="Playwright.Homework 11 -&gt; Product API Tests.GET /products - check API returns array with length &gt;= 1" />
+        <item itemvalue="Playwright.Homework 11 -&gt; Product API Tests.GET /products/{id} - should not return not-existing product" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-d6986cc7102b-9b0f141eb926-JavaScript-WS-253.31033.133" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="dbab4126-55a9-4588-8a89-c70dd52f6a4a" name="Changes" comment="" />
+      <created>1774884200348</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1774884200348</updated>
+      <workItem from="1774884204290" duration="2025000" />
+      <workItem from="1775217780601" duration="5368000" />
+      <workItem from="1775299476692" duration="677000" />
+      <workItem from="1775306865944" duration="5673000" />
+      <workItem from="1775383504362" duration="645000" />
+      <workItem from="1775485309321" duration="8663000" />
+      <workItem from="1775569830266" duration="2448000" />
+      <workItem from="1775590821199" duration="5431000" />
+      <workItem from="1775732693819" duration="7094000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
