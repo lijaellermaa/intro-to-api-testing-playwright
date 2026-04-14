@@ -9,6 +9,8 @@
       <change afterPath="$PROJECT_DIR$/tests/login-api-tests.spec.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.github/workflows/test.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/test.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/simple-solution-api.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/tests/simple-solution-api.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/DTO/ProductDTO.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/products-api-tests.spec.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
