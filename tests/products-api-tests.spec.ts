@@ -1,5 +1,5 @@
 import { expect, test } from '@playwright/test'
-import { ProductDTO } from '../src/DTO/ProductDTO'
+import { ProductDTO, ProductSchema, Product } from '../src/DTO/ProductDTO'
 import { StatusCodes } from 'http-status-codes'
 
 test.describe('Homework 11 -> Product API Tests', () => {
@@ -14,8 +14,11 @@ test.describe('Homework 11 -> Product API Tests', () => {
       headers: API_KEY,
     })
 
-    const responseBody: ProductDTO[] = await response.json()
+    const responseBody: Product[] = await response.json()
 
+    const firstProduct: Product = ProductSchema.parse(responseBody[0])
+
+    expect(firstProduct.createdAt).toBeNull()
     expect(response.status()).toBe(StatusCodes.OK)
     expect(responseBody.length).toBeDefined()
     expect(responseBody.length).toBeGreaterThanOrEqual(1)

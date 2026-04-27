@@ -5,12 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dbab4126-55a9-4588-8a89-c70dd52f6a4a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/DTO/LoginDTO.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/login-api-tests.spec.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.github/workflows/test.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/test.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/login-api-tests.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/tests/login-api-tests.spec.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/orders-api-tests.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/tests/orders-api-tests.spec.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/products-api-tests.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/tests/products-api-tests.spec.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/simple-solution-api.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/tests/simple-solution-api.spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/DTO/ProductDTO.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/products-api-tests.spec.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,48 +39,72 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Playwright.DELETE /test-orders/{id}.executor&quot;: &quot;Run&quot;,
-    &quot;Playwright.GET /test-orders/auth.executor&quot;: &quot;Run&quot;,
-    &quot;Playwright.GET /test-orders/{id}.executor&quot;: &quot;Run&quot;,
-    &quot;Playwright.Homework 11 -&gt; Product API Tests.DELETE /products/{id} - check not existing product deletion.executor&quot;: &quot;Run&quot;,
-    &quot;Playwright.Homework 11 -&gt; Product API Tests.DELETE /products/{id} - check product deletion.executor&quot;: &quot;Run&quot;,
-    &quot;Playwright.Homework 11 -&gt; Product API Tests.DELETE /products/{id} - should delete product.executor&quot;: &quot;Run&quot;,
-    &quot;Playwright.Homework 11 -&gt; Product API Tests.GET /products - check API returns array with length &gt;= 1.executor&quot;: &quot;Run&quot;,
-    &quot;Playwright.Homework 11 -&gt; Product API Tests.GET /products - should return list of products.executor&quot;: &quot;Run&quot;,
-    &quot;Playwright.Homework 11 -&gt; Product API Tests.GET /products/{id} - invalid API key.executor&quot;: &quot;Run&quot;,
-    &quot;Playwright.Homework 11 -&gt; Product API Tests.GET /products/{id} - should not return not-existing product.executor&quot;: &quot;Run&quot;,
-    &quot;Playwright.Homework 11 -&gt; Product API Tests.POST /products; GET /products/{id} - check product creation and product search by id.executor&quot;: &quot;Run&quot;,
-    &quot;Playwright.Homework 11 -&gt; Product API Tests.PUT /products/{id} - check product update.executor&quot;: &quot;Run&quot;,
-    &quot;Playwright.Homework 11 -&gt; Product API Tests.executor&quot;: &quot;Run&quot;,
-    &quot;Playwright.Homework 12 -&gt; Login API Tests.correct login.executor&quot;: &quot;Run&quot;,
-    &quot;Playwright.Homework 12 -&gt; Login API Tests.executor&quot;: &quot;Run&quot;,
-    &quot;Playwright.Homework 12 -&gt; Login API Tests.incorrect login.executor&quot;: &quot;Run&quot;,
-    &quot;Playwright.POST /test-orders.executor&quot;: &quot;Run&quot;,
-    &quot;Playwright.PUT /test-orders/{id}.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;feat/le/TL-012&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;javascript.preferred.runtime.type.id&quot;: &quot;node&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;npm.lint.executor&quot;: &quot;Run&quot;,
-    &quot;npm.prettier:check.executor&quot;: &quot;Run&quot;,
-    &quot;npm.prettier:format.executor&quot;: &quot;Run&quot;,
-    &quot;prettierjs.PrettierConfiguration.Package&quot;: &quot;C:\\Users\\lija5\\WebstormProjects\\intro-to-api-testing-playwright\\node_modules\\prettier&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;C:\\Users\\lija5\\WebstormProjects\\intro-to-api-testing-playwright\\node_modules\\typescript\\lib&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Playwright.DELETE /orders/{id}.delete order with API key containing non-numeric characters should receive code 401.executor": "Run",
+    "Playwright.DELETE /orders/{id}.delete order with correct id and API key should receive code 204.executor": "Run",
+    "Playwright.DELETE /orders/{id}.delete order with invalid API key should receive code 401.executor": "Run",
+    "Playwright.DELETE /orders/{id}.delete order with invalid ID format should receive code 400.executor": "Run",
+    "Playwright.DELETE /orders/{id}.delete order with non-existent ID should receive code 200.executor": "Run",
+    "Playwright.DELETE /orders/{id}.delete order with non-existent ID should receive code 400.executor": "Run",
+    "Playwright.DELETE /orders/{id}.delete order without API key should receive code 401.executor": "Run",
+    "Playwright.DELETE /orders/{id}.executor": "Run",
+    "Playwright.DELETE /test-orders/{id}.executor": "Run",
+    "Playwright.GET /orders/{id}.executor": "Run",
+    "Playwright.GET /test-orders/auth.executor": "Run",
+    "Playwright.GET /test-orders/{id}.executor": "Run",
+    "Playwright.Homework 11 -> Product API Tests.DELETE /products/{id} - check not existing product deletion.executor": "Run",
+    "Playwright.Homework 11 -> Product API Tests.DELETE /products/{id} - check product deletion.executor": "Run",
+    "Playwright.Homework 11 -> Product API Tests.DELETE /products/{id} - should delete product.executor": "Run",
+    "Playwright.Homework 11 -> Product API Tests.GET /products - check API returns array with length >= 1.executor": "Run",
+    "Playwright.Homework 11 -> Product API Tests.GET /products - should return list of products.executor": "Run",
+    "Playwright.Homework 11 -> Product API Tests.GET /products/{id} - invalid API key.executor": "Run",
+    "Playwright.Homework 11 -> Product API Tests.GET /products/{id} - should not return not-existing product.executor": "Run",
+    "Playwright.Homework 11 -> Product API Tests.POST /products; GET /products/{id} - check product creation and product search by id.executor": "Run",
+    "Playwright.Homework 11 -> Product API Tests.PUT /products/{id} - check product update.executor": "Run",
+    "Playwright.Homework 11 -> Product API Tests.executor": "Run",
+    "Playwright.Homework 12 -> Login API Tests.correct login.executor": "Run",
+    "Playwright.Homework 12 -> Login API Tests.executor": "Run",
+    "Playwright.Homework 12 -> Login API Tests.incorrect login.executor": "Run",
+    "Playwright.POST /orders.executor": "Run",
+    "Playwright.POST /test-orders.executor": "Run",
+    "Playwright.PUT /orders/{id}.executor": "Run",
+    "Playwright.PUT /orders/{id}/status.executor": "Run",
+    "Playwright.PUT /orders/{id}/status.update order status should receive code 200.executor": "Run",
+    "Playwright.PUT /orders/{id}/status.update order with API key containing non-numeric characters should receive code 401.executor": "Run",
+    "Playwright.PUT /orders/{id}/status.update order with correct id, API key and request body should receive code 200.executor": "Run",
+    "Playwright.PUT /orders/{id}/status.update order with empty request body should receive code 400.executor": "Run",
+    "Playwright.PUT /orders/{id}/status.update order with invalid API key should receive code 401.executor": "Run",
+    "Playwright.PUT /orders/{id}/status.update order with invalid ID format should receive code 400.executor": "Run",
+    "Playwright.PUT /orders/{id}/status.update order with invalid data in the request body should receive code 400.executor": "Run",
+    "Playwright.PUT /orders/{id}/status.update order with non-existent ID should receive code 400.executor": "Run",
+    "Playwright.PUT /orders/{id}/status.update order without API key should receive code 401.executor": "Run",
+    "Playwright.PUT /test-orders/{id}.executor": "Run",
+    "Playwright.get order with correct id should receive code 200.executor": "Run",
+    "Playwright.post order with correct data should receive code 201.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "git-widget-placeholder": "feat/le/TL-013",
+    "ignore.virus.scanning.warn.message": "true",
+    "javascript.preferred.runtime.type.id": "node",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "npm.lint.executor": "Run",
+    "npm.prettier:check.executor": "Run",
+    "npm.prettier:format.executor": "Run",
+    "npm.test.executor": "Run",
+    "prettierjs.PrettierConfiguration.Package": "C:\\Users\\lija5\\WebstormProjects\\intro-to-api-testing-playwright\\node_modules\\prettier",
+    "ts.external.directory.path": "C:\\Users\\lija5\\WebstormProjects\\intro-to-api-testing-playwright\\node_modules\\typescript\\lib",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
-  <component name="RunManager" selected="Playwright.Homework 12 -&gt; Login API Tests.correct login">
-    <configuration name="Homework 12 -&gt; Login API Tests" type="JavaScriptTestRunnerPlaywright" temporary="true" nameIsGenerated="true">
+}]]></component>
+  <component name="RunManager" selected="npm.test">
+    <configuration name="DELETE /orders/{id}" type="JavaScriptTestRunnerPlaywright" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
       <playwright-package value="$PROJECT_DIR$/node_modules/@playwright/test" />
       <working-dir value="$PROJECT_DIR$" />
@@ -90,25 +113,9 @@
         <env name="PASSWORD" value="dhmus5qbYbfT2n" />
       </envs>
       <scope-kind value="SUITE" />
-      <test-file value="$PROJECT_DIR$/tests/login-api-tests.spec.ts" />
+      <test-file value="$PROJECT_DIR$/tests/orders-api-tests.spec.ts" />
       <test-names>
-        <test-name value="Homework 12 -&gt; Login API Tests" />
-      </test-names>
-      <method v="2" />
-    </configuration>
-    <configuration name="Homework 12 -&gt; Login API Tests.correct login" type="JavaScriptTestRunnerPlaywright" temporary="true" nameIsGenerated="true">
-      <node-interpreter value="project" />
-      <playwright-package value="$PROJECT_DIR$/node_modules/@playwright/test" />
-      <working-dir value="$PROJECT_DIR$" />
-      <envs>
-        <env name="USER" value="lellermaa" />
-        <env name="PASSWORD" value="dhmus5qbYbfT2n" />
-      </envs>
-      <scope-kind value="TEST" />
-      <test-file value="$PROJECT_DIR$/tests/login-api-tests.spec.ts" />
-      <test-names>
-        <test-name value="Homework 12 -&gt; Login API Tests" />
-        <test-name value="correct login" />
+        <test-name value="DELETE /orders/{id}" />
       </test-names>
       <method v="2" />
     </configuration>
@@ -142,20 +149,30 @@
       <envs />
       <method v="2" />
     </configuration>
+    <configuration name="test" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="test" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
     <list>
       <item itemvalue="npm.lint" />
       <item itemvalue="npm.prettier:check" />
       <item itemvalue="npm.prettier:format" />
-      <item itemvalue="Playwright.Homework 12 -&gt; Login API Tests" />
-      <item itemvalue="Playwright.Homework 12 -&gt; Login API Tests.correct login" />
+      <item itemvalue="npm.test" />
+      <item itemvalue="Playwright.DELETE /orders/{id}" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Playwright.Homework 12 -&gt; Login API Tests" />
+        <item itemvalue="npm.test" />
         <item itemvalue="npm.lint" />
-        <item itemvalue="npm.prettier:format" />
         <item itemvalue="npm.prettier:check" />
-        <item itemvalue="Playwright.Homework 12 -&gt; Login API Tests.correct login" />
+        <item itemvalue="npm.prettier:format" />
+        <item itemvalue="Playwright.DELETE /orders/{id}" />
       </list>
     </recent_temporary>
   </component>
@@ -182,6 +199,14 @@
       <workItem from="1775569830266" duration="2448000" />
       <workItem from="1775590821199" duration="5431000" />
       <workItem from="1775732693819" duration="7094000" />
+      <workItem from="1776175140339" duration="4675000" />
+      <workItem from="1776199321551" duration="2313000" />
+      <workItem from="1776341746478" duration="72000" />
+      <workItem from="1776937086568" duration="7311000" />
+      <workItem from="1777031341408" duration="8613000" />
+      <workItem from="1777189810955" duration="13420000" />
+      <workItem from="1777299066530" duration="2591000" />
+      <workItem from="1777319661319" duration="5431000" />
     </task>
     <servers />
   </component>
