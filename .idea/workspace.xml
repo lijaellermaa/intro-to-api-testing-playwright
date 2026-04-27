@@ -5,16 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dbab4126-55a9-4588-8a89-c70dd52f6a4a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/DTO/OrderDTO.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/helpers/api-helper.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/orders-api-tests.spec.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DTO/LoginDTO.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/DTO/LoginDTO.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DTO/ProductDTO.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/DTO/ProductDTO.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/login-api-tests.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/tests/login-api-tests.spec.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/orders-api-tests.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/tests/orders-api-tests.spec.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/products-api-tests.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/tests/products-api-tests.spec.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/simple-solution-api.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/tests/simple-solution-api.spec.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -102,12 +97,13 @@
     "npm.lint.executor": "Run",
     "npm.prettier:check.executor": "Run",
     "npm.prettier:format.executor": "Run",
+    "npm.test.executor": "Run",
     "prettierjs.PrettierConfiguration.Package": "C:\\Users\\lija5\\WebstormProjects\\intro-to-api-testing-playwright\\node_modules\\prettier",
     "ts.external.directory.path": "C:\\Users\\lija5\\WebstormProjects\\intro-to-api-testing-playwright\\node_modules\\typescript\\lib",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="Playwright.DELETE /orders/{id}">
+  <component name="RunManager" selected="npm.test">
     <configuration name="DELETE /orders/{id}" type="JavaScriptTestRunnerPlaywright" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
       <playwright-package value="$PROJECT_DIR$/node_modules/@playwright/test" />
@@ -123,78 +119,60 @@
       </test-names>
       <method v="2" />
     </configuration>
-    <configuration name="DELETE /orders/{id}.delete order with non-existent ID should receive code 200" type="JavaScriptTestRunnerPlaywright" temporary="true" nameIsGenerated="true">
+    <configuration name="lint" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="lint" />
+      </scripts>
       <node-interpreter value="project" />
-      <playwright-package value="$PROJECT_DIR$/node_modules/@playwright/test" />
-      <working-dir value="$PROJECT_DIR$" />
       <envs />
-      <scope-kind value="TEST" />
-      <test-file value="$PROJECT_DIR$/tests/orders-api-tests.spec.ts" />
-      <test-names>
-        <test-name value="DELETE /orders/{id}" />
-        <test-name value="delete order with non-existent ID should receive code 200" />
-      </test-names>
       <method v="2" />
     </configuration>
-    <configuration name="GET /orders/{id}" type="JavaScriptTestRunnerPlaywright" temporary="true" nameIsGenerated="true">
+    <configuration name="prettier:check" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="prettier:check" />
+      </scripts>
       <node-interpreter value="project" />
-      <playwright-package value="$PROJECT_DIR$/node_modules/@playwright/test" />
-      <working-dir value="$PROJECT_DIR$" />
-      <envs>
-        <env name="USER" value="lellermaa" />
-        <env name="PASSWORD" value="dhmus5qbYbfT2n" />
-      </envs>
-      <scope-kind value="SUITE" />
-      <test-file value="$PROJECT_DIR$/tests/orders-api-tests.spec.ts" />
-      <test-names>
-        <test-name value="GET /orders/{id}" />
-      </test-names>
+      <envs />
       <method v="2" />
     </configuration>
-    <configuration name="POST /orders" type="JavaScriptTestRunnerPlaywright" temporary="true" nameIsGenerated="true">
+    <configuration name="prettier:format" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="prettier:format" />
+      </scripts>
       <node-interpreter value="project" />
-      <playwright-package value="$PROJECT_DIR$/node_modules/@playwright/test" />
-      <working-dir value="$PROJECT_DIR$" />
-      <envs>
-        <env name="USER" value="lellermaa" />
-        <env name="PASSWORD" value="dhmus5qbYbfT2n" />
-      </envs>
-      <scope-kind value="SUITE" />
-      <test-file value="$PROJECT_DIR$/tests/orders-api-tests.spec.ts" />
-      <test-names>
-        <test-name value="POST /orders" />
-      </test-names>
+      <envs />
       <method v="2" />
     </configuration>
-    <configuration name="PUT /orders/{id}/status" type="JavaScriptTestRunnerPlaywright" temporary="true" nameIsGenerated="true">
+    <configuration name="test" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="test" />
+      </scripts>
       <node-interpreter value="project" />
-      <playwright-package value="$PROJECT_DIR$/node_modules/@playwright/test" />
-      <working-dir value="$PROJECT_DIR$" />
-      <envs>
-        <env name="USER" value="lellermaa" />
-        <env name="PASSWORD" value="dhmus5qbYbfT2n" />
-      </envs>
-      <scope-kind value="SUITE" />
-      <test-file value="$PROJECT_DIR$/tests/orders-api-tests.spec.ts" />
-      <test-names>
-        <test-name value="PUT /orders/{id}/status" />
-      </test-names>
+      <envs />
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Playwright.DELETE /orders/{id}.delete order with non-existent ID should receive code 200" />
+      <item itemvalue="npm.lint" />
+      <item itemvalue="npm.prettier:check" />
+      <item itemvalue="npm.prettier:format" />
+      <item itemvalue="npm.test" />
       <item itemvalue="Playwright.DELETE /orders/{id}" />
-      <item itemvalue="Playwright.PUT /orders/{id}/status" />
-      <item itemvalue="Playwright.GET /orders/{id}" />
-      <item itemvalue="Playwright.POST /orders" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="npm.test" />
+        <item itemvalue="npm.lint" />
+        <item itemvalue="npm.prettier:check" />
+        <item itemvalue="npm.prettier:format" />
         <item itemvalue="Playwright.DELETE /orders/{id}" />
-        <item itemvalue="Playwright.PUT /orders/{id}/status" />
-        <item itemvalue="Playwright.GET /orders/{id}" />
-        <item itemvalue="Playwright.POST /orders" />
-        <item itemvalue="Playwright.DELETE /orders/{id}.delete order with non-existent ID should receive code 200" />
       </list>
     </recent_temporary>
   </component>
@@ -228,7 +206,7 @@
       <workItem from="1777031341408" duration="8613000" />
       <workItem from="1777189810955" duration="13420000" />
       <workItem from="1777299066530" duration="2591000" />
-      <workItem from="1777319661319" duration="4264000" />
+      <workItem from="1777319661319" duration="5431000" />
     </task>
     <servers />
   </component>

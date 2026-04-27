@@ -30,7 +30,6 @@ test.describe('GET /orders/{id}', () => {
 })
 
 test.describe('PUT /orders/{id}/status', () => {
-
   test('should return 403 when student tries to change status', async ({ request }) => {
     const token = await getJwt(request)
 
@@ -38,9 +37,9 @@ test.describe('PUT /orders/{id}/status', () => {
 
     const response = await request.put(`${ORDERS_URL}/${createdOrder.id}/status`, {
       headers: {
-        Authorization: `Bearer ${token}`
+        Authorization: `Bearer ${token}`,
       },
-      data: { status: 'ACCEPTED' }
+      data: { status: 'ACCEPTED' },
     })
 
     expect(response.status()).toBe(403)
@@ -51,7 +50,7 @@ test.describe('PUT /orders/{id}/status', () => {
 
     const response = await request.put(`${ORDERS_URL}/abc/status`, {
       headers: {
-        Authorization: `Bearer ${token}`
+        Authorization: `Bearer ${token}`,
       },
       data: { status: 'ACCEPTED' },
     })
@@ -62,8 +61,8 @@ test.describe('PUT /orders/{id}/status', () => {
   })
 
   test('update order with invalid data in the request body should receive code 400', async ({
-                                                                                              request,
-                                                                                            }) => {
+    request,
+  }) => {
     const token = await getJwt(request)
 
     const createdOrder = await createOrder(request, token, OrderDTO.generateDefaultBody())
@@ -72,7 +71,7 @@ test.describe('PUT /orders/{id}/status', () => {
       headers: {
         Authorization: `Bearer ${token}`,
       },
-      data: { status: 'HELLO' }
+      data: { status: 'HELLO' },
     })
 
     expect(response.status()).toBe(400)
@@ -85,7 +84,7 @@ test.describe('PUT /orders/{id}/status', () => {
 
     const response = await request.put(`${ORDERS_URL}/${createdOrder.id}/status`, {
       headers: {
-        Authorization: `Bearer`
+        Authorization: `Bearer`,
       },
       data: { status: 'ACCEPTED' },
     })
@@ -95,7 +94,6 @@ test.describe('PUT /orders/{id}/status', () => {
 })
 
 test.describe('DELETE /orders/{id}', () => {
-
   test('delete order with correct id and token should receive code 200', async ({ request }) => {
     const token = await getJwt(request)
 
@@ -103,8 +101,8 @@ test.describe('DELETE /orders/{id}', () => {
 
     const response = await request.delete(`${ORDERS_URL}/${createdOrder.id}`, {
       headers: {
-        Authorization: `Bearer ${token}`
-      }
+        Authorization: `Bearer ${token}`,
+      },
     })
 
     const responseBody = await response.json()
@@ -118,8 +116,8 @@ test.describe('DELETE /orders/{id}', () => {
 
     const response = await request.delete(`${ORDERS_URL}/999999999999`, {
       headers: {
-        Authorization: `Bearer ${token}`
-      }
+        Authorization: `Bearer ${token}`,
+      },
     })
 
     const responseBody = await response.json()
@@ -134,7 +132,7 @@ test.describe('DELETE /orders/{id}', () => {
     const response = await request.delete(`${ORDERS_URL}/abc`, {
       headers: {
         Authorization: `Bearer ${token}`,
-      }
+      },
     })
 
     expect(response.status()).toBe(400)
